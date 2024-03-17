@@ -58,7 +58,7 @@ contract AmpleSenseGeyser is TokenGeyser {
 
     /**
     * Allows to add new reward tokens to the reward pool
-    * Contract must be allowed to transfer this amount from the caller
+    * Contract must be allowed to transfer this amount from the caller !!!
     */
     function addRewardRebase(uint256 amount) external onlyOwner {
         totalRewardTokens = totalRewardTokens.add(amount);
