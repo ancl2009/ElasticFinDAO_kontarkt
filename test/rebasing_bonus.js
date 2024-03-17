@@ -27,7 +27,7 @@ describe('rebasing bonus', function () {
     await ampl.initialize(owner);
     await ampl.setMonetaryPolicy(owner);
 
-    const startBonus = 50;
+    const startBonus = 500;
     const bonusPeriod = 86400;
     dist = await TokenGeyser.new(ampl.address, ampl.address, 10, startBonus, bonusPeriod,
       InitialSharesPerToken, ampl.address, 5, 10);
